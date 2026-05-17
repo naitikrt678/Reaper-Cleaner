@@ -2,6 +2,7 @@
 <p align="center">
   <img src="assets/icon.png" width="200">
 </p>
+
 ![Screenshot](assets/Screenshot.png)
 
 A modern PySide6 desktop application to safely clean unused and silent media files from your REAPER projects.
