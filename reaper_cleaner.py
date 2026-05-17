@@ -469,6 +469,10 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "Error", "Please select a valid Media folder.")
             return
             
+        if Path(proj_dir).resolve().parent == Path(proj_dir).resolve() or Path(media_dir).resolve().parent == Path(media_dir).resolve():
+            QMessageBox.critical(self, "Error", "Scanning an entire root drive (like C:\\) is not allowed due to catastrophic deletion risks and performance issues. Please select a more specific folder.")
+            return
+            
         options = {
             "detect_silent": self.detect_silent_cb.isChecked(),
             "silence_threshold": self.threshold_spin.value(),
