@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 echo.
 echo Building executable with PyInstaller...
-pyinstaller --noconfirm --clean --onefile --windowed --name "ReaperCleaner" reaper_cleaner.py
+pyinstaller --noconfirm --clean --onefile --windowed --icon "assets\icon.ico" --name "ReaperCleaner" reaper_cleaner.py
 
 echo.
 echo Build complete! The executable is located in the 'dist' directory.
