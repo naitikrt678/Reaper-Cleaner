@@ -1,5 +1,6 @@
 # REAPER Media Cleaner
 
+![Screenshot](assets/icon.png)
 ![Screenshot](assets/Screenshot.png)
 
 A modern PySide6 desktop application to safely clean unused and silent media files from your REAPER projects.
